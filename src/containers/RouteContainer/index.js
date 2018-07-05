@@ -1,17 +1,16 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
 import {
-    Route
-} from 'react-router-dom'
-import { MainLayoutContainer } from 'containers'
+    MainLayoutContainer,
+    PofileContainer,
+    PictureContainer
+} from 'containers'
 
 class RouteContainer extends React.Component {
-    componentDidMount() {
-        this.props.history.push("/main")
-    }
     render() {
         return (
             <div>
-                <Route path='/main' component={MainLayoutContainer} />
+                <Route path='/' component={MainLayoutContainer} />
             </div>
         )
     }

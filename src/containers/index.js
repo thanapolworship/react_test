@@ -1,5 +1,2 @@
-export * from './Route'
-export * from './UserManagement'
-export * from './TagManagement'
-export * from './ChatManagement'
-export * from './MainLayout'
+export { default as RouteContainer } from './RouteContainer'
+export { default as MainLayoutContainer } from './MainLayoutContainer'
